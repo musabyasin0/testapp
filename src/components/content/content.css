@@ -1,0 +1,221 @@
+.addItem {
+  position: relative;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  background: black;
+  border-top: 1px dashed silver;
+  border-bottom: 1px dashed silver;
+  padding: 12px;
+  transition: 0.4s 0.2s all;
+}
+.addItem label {
+  font-family: cursive;
+  background: linear-gradient(-8deg, black, rgba(0, 0, 0, 0.4), black);
+  width: 200px;
+  padding: 10px;
+  box-shadow: 1px 1px 4px white;
+  border-radius: 12px;
+  margin: 0 0 20px 0;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+.addItem .itemName {
+  border: 1px solid transparent;
+  width: 60%;
+  border-radius: 6px;
+  outline: none;
+  background: darkred;
+  padding: 3px 6px;
+  color: white;
+  text-align: center;
+  transition: 0.4s 0.2s;
+}
+.addItem .itemName:focus,
+.addItem .itemName:hover {
+  border: 1px solid limegreen;
+  background: black;
+  color: lime;
+  transition: 0.3s 0.15s;
+}
+.addItem .formButton {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: darkred;
+  padding: 4px 16px;
+  color: white;
+  transition: 0.4s 0.2s;
+}
+.addItem .formButton:hover {
+  border: 1px solid limegreen;
+  background: black;
+  color: lime;
+  transition: 0.3s 0.15s;
+}
+.searchItem {
+  position: relative;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  background: black;
+  border-top: 1px dashed silver;
+  border-bottom: 1px dashed silver;
+  padding: 12px;
+  transition: 0.4s 0.2s all;
+}
+.searchItem label {
+  font-family: cursive;
+  background: linear-gradient(-8deg, black, rgba(0, 0, 0, 0.4), black);
+  width: 100%;
+  padding: 10px;
+  box-shadow: 1px 1px 4px white;
+  border-radius: 12px;
+  margin: 0 0 20px 0;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+.searchItem .searchKey {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  width: 60%;
+  background: darkred;
+  padding: 3px 6px;
+  color: white;
+  text-align: center;
+  transition: 0.4s 0.2s;
+}
+.searchItem .searchKey:focus,
+.searchItem .searchKey:hover {
+  border: 1px solid limegreen;
+  background: black;
+  color: lime;
+  transition: 0.3s 0.15s;
+}
+main {
+  background: #000;
+  text-align: center;
+}
+main .err {
+  padding: 12px;
+}
+.itemList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 415px;
+  min-height: 300px;
+  background: #000;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  overflow: auto;
+  transition: 0.4s 0.2s all;
+}
+.itemList::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: transparent;
+}
+.itemList::-webkit-scrollbar-track {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+.itemList::-webkit-scrollbar-thumb {
+  width: 8px;
+  height: 8px;
+  background: rgba(121, 121, 121, 0.8);
+  border-radius: 25px;
+}
+.itemList label {
+  font-family: cursive;
+  background: linear-gradient(-8deg, black, gray);
+  width: 100%;
+  padding: 15px;
+  margin: 0 0 20px 0;
+  border-radius: 12px;
+  box-shadow: 1px 1px 4px gray;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: 0.3s 0.2s all;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: white;
+  padding: 5px;
+  border-bottom: 1px solid silver;
+  transition: 0.3s 0.2s all;
+}
+input.check {
+  width: 30px;
+  height: 30px;
+  border: 1px solid silver;
+  outline: none;
+  background: #000;
+  transition: 0.3s all;
+}
+input.check:checked {
+  background: red;
+}
+
+.items label {
+  width: 70%;
+  background: darkred;
+  padding: 6px 0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.4s 0.2s;
+}
+.items label:hover {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid lime;
+  color: lime;
+  transition: 0.3s 0.15s;
+}
+.delete {
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border-radius: 50%;
+  background: darkred;
+  border: none;
+  color: black;
+  transition: 0.4s 0.2s;
+}
+.delete:hover {
+  background: black;
+  color: red;
+  transition: 0.3s 0.15s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
